@@ -1,0 +1,18 @@
+title: Dr. Iris K. Schneider
+description: >
+  Social psychologist at the University of Cologne, researching ambivalence,
+  judgment and decision-making, and leadership. Exploring when holding
+  mixed thoughts and feelings helps us think and decide better.
+
+url: "https://ikschneider.github.io"
+baseurl: "/irisschneider-website"
+
+author:
+  name: Dr. Iris K. Schneider
+  email: iris.schneider@wiso.uni-koeln.de
+
+lang: en
+
+# Exclude source files from the built site
+exclude:
+  - index.old.html
