@@ -1,0 +1,219 @@
+/* ============================================================
+   irisschneider.nl — shared design system
+   ============================================================
+
+   Typography
+   ----------
+   Font family : Raleway (Google Fonts)
+   Weights used: 300 (light), 400 (regular), 500 (medium),
+                 600 (semibold), 700 (bold)
+
+   Color palette
+   -------------
+   Background  : #fdf8f7   warm off-white
+   Text        : #3a3a3a   dark charcoal
+   Accent gold : #E8B84B   used for links, highlights, dividers
+   Muted text  : #888      meta / labels
+   Subtle rule : #e8e0d8   borders and dividers
+
+   Layout
+   ------
+   Content max-width : 800px, centered
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Base ── */
+:root {
+  --color-bg:       #fdf8f7;
+  --color-text:     #3a3a3a;
+  --color-accent:   #E8B84B;
+  --color-muted:    #888;
+  --color-border:   #e8e0d8;
+  --font-main:      'Raleway', sans-serif;
+  --content-width:  800px;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* ── Navigation ── */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  height: 56px;
+}
+
+.nav-brand {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.nav-brand:hover { color: var(--color-accent); }
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+  list-style: none;
+}
+
+.nav-links a,
+.nav-back {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover,
+.nav-back:hover { text-decoration: underline; }
+
+.nav-back { margin-left: auto; }
+
+/* ── Article layout ── */
+.article-wrap {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 3.5rem 2rem 5rem;
+}
+
+/* ── Article meta ── */
+.article-meta {
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.article-meta .author {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+/* ── Headings ── */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 2.25rem;
+  color: var(--color-text);
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 2.5rem 0 1rem;
+  color: var(--color-text);
+}
+
+/* ── Body text ── */
+.article-body p {
+  margin-bottom: 1.4rem;
+  font-size: 1rem;
+}
+
+/* ── Links ── */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+/* ── Lists ── */
+.article-body ul {
+  margin: 1rem 0 1.4rem 1.5rem;
+}
+
+.article-body li {
+  margin-bottom: 0.9rem;
+  font-size: 1rem;
+}
+
+/* ── Gold divider ── */
+.divider {
+  border: none;
+  border-top: 2px solid var(--color-accent);
+  width: 48px;
+  margin: 2.5rem 0;
+}
+
+/* ── References ── */
+.references {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.references h2 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+  margin-bottom: 1rem;
+}
+
+.references ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.references li {
+  font-size: 0.87rem;
+  color: #666;
+  margin-bottom: 0.8rem;
+  padding-left: 1.25rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.references li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  border-top: 1px solid var(--color-border);
+}
+
+footer a {
+  color: var(--color-muted);
+}
+
+footer a:hover {
+  color: var(--color-accent);
+}
