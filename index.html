@@ -261,7 +261,7 @@
 
     .blog-posts { display: flex; flex-direction: column; gap: 0; }
 
-    .blog-post {
+    a.blog-post {
       display: grid;
       grid-template-columns: 380px 1fr;
       min-height: 280px;
@@ -270,7 +270,12 @@
       transition: background 0.15s;
     }
 
-    .blog-post:hover { background: #fdf5ef; }
+    a.blog-post {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    a.blog-post:hover { background: #fdf5ef; }
 
     .blog-post-img {
       overflow: hidden;
@@ -575,7 +580,7 @@
 
     <div class="blog-posts">
 
-      <article class="blog-post">
+      <a href="blog-ambivalent-leaders.html" class="blog-post">
         <div class="blog-post-img" style="background:#b0a8a4;">
           <img
             src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&q=80"
@@ -591,9 +596,9 @@
           <div class="blog-post-title">The Surprising Strength of Ambivalent Leaders: Why Expressing Mixed Thoughts And Feelings Can Inspire Employees to Speak Up</div>
           <div class="blog-post-excerpt">This blog was written together with Dr. Jana Hohnsbehn. What makes a great leader? Confidence? Decisiveness? A firm stance? Many decisions are complex and involve competing priorities, conflicting information, and trade-offs. In these cases, leaders may feel ambivalent — and expressing that may actually be a strength.</div>
         </div>
-      </article>
+      </a>
 
-      <article class="blog-post">
+      <a href="blog-confirmation-bias.html" class="blog-post">
         <div class="blog-post-img" style="background:#c2b8a4;">
           <img
             src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80"
@@ -609,9 +614,9 @@
           <div class="blog-post-title">Torn but balanced: Ambivalent individuals are less prone to confirmation bias</div>
           <div class="blog-post-excerpt">Ambivalence encourages us to consider a wider range of information, promoting balance in the decision-making process and reducing one-sided thinking. When we experience ambivalence, we are aware of both the positive and negative aspects of our options, which helps us see the pros and cons of each option more clearly.</div>
         </div>
-      </article>
+      </a>
 
-      <article class="blog-post">
+      <a href="blog-benefit-of-the-doubt.html" class="blog-post">
         <div class="blog-post-img" style="background:#a8aaac;">
           <img
             src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80"
@@ -627,7 +632,7 @@
           <div class="blog-post-title">The benefit of the doubt — people who are more ambivalent are fairer in their social judgments.</div>
           <div class="blog-post-excerpt">Ambivalence refers to the experience of having both positive and negative thoughts and feelings about the same object, person, or issue. Traditionally, ambivalence has been seen as a negative phenomenon, leading to indecision. However, in recent work, we show that ambivalence can positively affect judgment and decision-making processes.</div>
         </div>
-      </article>
+      </a>
 
     </div>
   </div>
