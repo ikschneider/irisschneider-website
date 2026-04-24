@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Dr. Iris K. Schneider</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Raleway', Helvetica, Arial, sans-serif;
+      background-color: #fdf8f7;
+      color: #3a3a3a;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid #e8e2e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding: 14px 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #3a3a3a;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: color 0.2s;
+    }
+
+    nav a:hover, nav a.active { color: #E8B84B; }
+
+    .nav-email-btn {
+      background: #E8B84B;
+      color: #fff !important;
+      border-radius: 50px;
+      padding: 8px 18px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .nav-email-btn:hover { background: #d4a33a; }
+    .nav-email-btn svg { width: 16px; height: 16px; fill: #fff; }
+
+    .content-wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 30px 80px;
+    }
+
+    .blog-filter {
+      font-size: 14px;
+      font-weight: 600;
+      color: #E8B84B;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .blog-posts { display: flex; flex-direction: column; gap: 0; }
+
+    a.blog-post {
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      min-height: 280px;
+      border-bottom: 1px solid #ede8e6;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.15s;
+    }
+
+    a.blog-post:hover { background: #fdf5ef; }
+
+    .blog-post-img {
+      overflow: hidden;
+      background: #c8c0bc;
+    }
+
+    .blog-post-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .blog-post-body {
+      padding: 28px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .blog-post-meta {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 12px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .blog-post-meta span { font-weight: 500; color: #555; }
+
+    .blog-post-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #2a2a2a;
+      line-height: 1.3;
+      margin-bottom: 14px;
+    }
+
+    .blog-post-excerpt {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.7;
+    }
+
+    .blog-post-read-more {
+      margin-top: auto;
+      padding-top: 16px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #E8B84B;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 13px;
+      color: #aaa;
+      border-top: 1px solid #ede8e6;
+    }
+
+    footer a { color: #aaa; text-decoration: underline; }
+
+    @media (max-width: 720px) {
+      nav { gap: 20px; padding: 12px 20px; }
+      a.blog-post { grid-template-columns: 1fr; }
+      .blog-post-img { height: 220px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">About</a>
+  <a href="research.html">Research</a>
+  <a href="speaking.html">Speaking</a>
+  <a href="blog.html" class="active">Blog</a>
+  <a href="mailto:iris.schneider@wiso.uni-koeln.de?subject=hello%20from%20website" class="nav-email-btn">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+    </svg>
+  </a>
+</nav>
+
+<div class="content-wrap">
+  <div class="blog-filter">All Posts</div>
+
+  <div class="blog-posts">
+
+    <a href="blog-ambivalent-leaders.html" class="blog-post">
+      <div class="blog-post-img" style="background:#b0a8a4;">
+        <img
+          src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&q=80"
+          alt="Leader speaking"
+          onerror="this.style.display='none';"
+        />
+      </div>
+      <div class="blog-post-body">
+        <div class="blog-post-meta">
+          <span>Iris Schneider</span>
+          Feb 17 &middot; 5 min read
+        </div>
+        <div class="blog-post-title">The Surprising Strength of Ambivalent Leaders: Why Expressing Mixed Thoughts And Feelings Can Inspire Employees to Speak Up</div>
+        <div class="blog-post-excerpt">This blog was written together with Dr. Jana Hohnsbehn. What makes a great leader? Confidence? Decisiveness? A firm stance? Many decisions are complex and involve competing priorities, conflicting information, and trade-offs. In these cases, leaders may feel ambivalent — and expressing that may actually be a strength.</div>
+        <div class="blog-post-read-more">Read more →</div>
+      </div>
+    </a>
+
+    <a href="blog-confirmation-bias.html" class="blog-post">
+      <div class="blog-post-img" style="background:#c2b8a4;">
+        <img
+          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80"
+          alt="Balance"
+          onerror="this.style.display='none';"
+        />
+      </div>
+      <div class="blog-post-body">
+        <div class="blog-post-meta">
+          <span>Iris Schneider</span>
+          Jan 30, 2025 &middot; 1 min read
+        </div>
+        <div class="blog-post-title">Torn but balanced: Ambivalent individuals are less prone to confirmation bias</div>
+        <div class="blog-post-excerpt">Ambivalence encourages us to consider a wider range of information, promoting balance in the decision-making process and reducing one-sided thinking. When we experience ambivalence, we are aware of both the positive and negative aspects of our options, which helps us see the pros and cons of each option more clearly.</div>
+        <div class="blog-post-read-more">Read more →</div>
+      </div>
+    </a>
+
+    <a href="blog-benefit-of-the-doubt.html" class="blog-post">
+      <div class="blog-post-img" style="background:#a8aaac;">
+        <img
+          src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80"
+          alt="Research"
+          onerror="this.style.display='none';"
+        />
+      </div>
+      <div class="blog-post-body">
+        <div class="blog-post-meta">
+          <span>Iris Schneider</span>
+          Jan 30, 2023 &middot; 2 min read
+        </div>
+        <div class="blog-post-title">The benefit of the doubt — people who are more ambivalent are fairer in their social judgments.</div>
+        <div class="blog-post-excerpt">Ambivalence refers to the experience of having both positive and negative thoughts and feelings about the same object, person, or issue. Traditionally, ambivalence has been seen as a negative phenomenon, leading to indecision. However, in recent work, we show that ambivalence can positively affect judgment and decision-making processes.</div>
+        <div class="blog-post-read-more">Read more →</div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<footer>
+  <p>&copy; Dr. Iris K. Schneider &mdash; <a href="mailto:iris.schneider@wiso.uni-koeln.de">iris.schneider@wiso.uni-koeln.de</a></p>
+</footer>
+
+</body>
+</html>
