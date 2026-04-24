@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speaking — Dr. Iris K. Schneider</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Raleway', Helvetica, Arial, sans-serif;
+      background-color: #fdf8f7;
+      color: #3a3a3a;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid #e8e2e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding: 14px 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #3a3a3a;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: color 0.2s;
+    }
+
+    nav a:hover, nav a.active { color: #E8B84B; }
+
+    .nav-email-btn {
+      background: #E8B84B;
+      color: #fff !important;
+      border-radius: 50px;
+      padding: 8px 18px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .nav-email-btn:hover { background: #d4a33a; }
+    .nav-email-btn svg { width: 16px; height: 16px; fill: #fff; }
+
+    .content-wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 30px 80px;
+    }
+
+    .page-heading {
+      font-size: 44px;
+      font-weight: 700;
+      color: #2a2a2a;
+      margin-bottom: 20px;
+      line-height: 1.1;
+    }
+
+    .speaking-intro {
+      font-size: 15.5px;
+      line-height: 1.8;
+      color: #3d3d3d;
+      margin-bottom: 30px;
+    }
+
+    .speaking-topics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .speaking-card {
+      background: #fff;
+      border: 1px solid #ede8e6;
+      border-radius: 6px;
+      padding: 28px 24px;
+    }
+
+    .speaking-card h3 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #2a2a2a;
+    }
+
+    .speaking-card p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #666;
+    }
+
+    .contact-cta {
+      margin-top: 50px;
+      background: #E8B84B;
+      color: #fff;
+      border-radius: 6px;
+      padding: 30px 32px;
+    }
+
+    .contact-cta h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .contact-cta p { font-size: 14.5px; opacity: 0.95; margin-bottom: 18px; }
+
+    .contact-cta a {
+      display: inline-block;
+      background: #fff;
+      color: #E8B84B;
+      font-weight: 700;
+      padding: 10px 22px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 13px;
+      color: #aaa;
+      border-top: 1px solid #ede8e6;
+    }
+
+    footer a { color: #aaa; text-decoration: underline; }
+
+    @media (max-width: 720px) {
+      nav { gap: 20px; padding: 12px 20px; }
+      .page-heading { font-size: 32px; }
+      .speaking-topics { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">About</a>
+  <a href="research.html">Research</a>
+  <a href="speaking.html" class="active">Speaking</a>
+  <a href="blog.html">Blog</a>
+  <a href="mailto:iris.schneider@wiso.uni-koeln.de?subject=hello%20from%20website" class="nav-email-btn">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+    </svg>
+  </a>
+</nav>
+
+<div class="content-wrap">
+  <h1 class="page-heading">Speaking</h1>
+
+  <p class="speaking-intro">Dr. Iris Schneider is available for keynote talks, panel discussions, and public lectures on ambivalence, trust, decision-making, and the psychology of conflict. Her research translates directly to practical insights for organizations, policymakers, and the general public.</p>
+
+  <div class="speaking-topics">
+    <div class="speaking-card">
+      <h3>Ambivalence &amp; Decision-Making</h3>
+      <p>How mixed feelings shape the way individuals and institutions navigate complex choices, and why ambivalence is not always a problem to be resolved.</p>
+    </div>
+    <div class="speaking-card">
+      <h3>Trust &amp; Social Behavior</h3>
+      <p>How expressing ambivalence influences perceptions of trustworthiness, and what this means for leaders, politicians, and everyday relationships.</p>
+    </div>
+    <div class="speaking-card">
+      <h3>Creativity &amp; Reduced Bias</h3>
+      <p>Examining the conditions under which holding conflicting views leads to more creative thinking and more balanced, fair judgments.</p>
+    </div>
+    <div class="speaking-card">
+      <h3>Mentoring &amp; Academia</h3>
+      <p>Supporting early-career researchers and first-generation students as they navigate academic systems, with a focus on the German higher education landscape.</p>
+    </div>
+  </div>
+
+  <div class="contact-cta">
+    <h3>Interested in a talk?</h3>
+    <p>Please reach out by email to discuss topics, formats, and availability.</p>
+    <a href="mailto:iris.schneider@wiso.uni-koeln.de?subject=Speaking%20Inquiry">Send an email</a>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; Dr. Iris K. Schneider &mdash; <a href="mailto:iris.schneider@wiso.uni-koeln.de">iris.schneider@wiso.uni-koeln.de</a></p>
+</footer>
+
+</body>
+</html>
