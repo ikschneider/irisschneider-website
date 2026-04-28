@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Research — Dr. Iris K. Schneider</title>
+  <title>Research â Dr. Iris K. Schneider</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -112,14 +112,31 @@
       line-height: 1.3;
     }
 
-    .pub-list { list-style: none; padding: 0; }
+    .pub-list {
+      list-style: none;
+      padding: 0;
+      counter-reset: pub-counter;
+    }
 
     .pub-list li {
       font-size: 14.5px;
       line-height: 1.75;
       color: #3d3d3d;
-      padding: 12px 0 12px 0;
+      padding: 12px 0 12px 2.4em;
       border-bottom: 1px solid #f0ecea;
+      position: relative;
+      counter-increment: pub-counter;
+    }
+
+    .pub-list li::before {
+      content: counter(pub-counter) ".";
+      position: absolute;
+      left: 0;
+      top: 12px;
+      color: #E8B84B;
+      font-weight: 700;
+      font-size: 13px;
+      min-width: 1.8em;
     }
 
     .pub-list li .pub-me { font-weight: 700; }
@@ -176,17 +193,17 @@
   <ul class="pub-list">
     <li>Buttlar, B., Lambrich, A., McCaughey, L., &amp; <span class="pub-me">Schneider, I. K.</span> (accepted for publication). Too Much Information? A Systematic Investigation of the Antecedents and Consequences of Ambivalence-Induced Information Seeking Behavior. <em>Journal of Experimental Social Psychology</em> <a href="https://osf.io/preprints/psyarxiv/spu79_v2" target="_blank">https://osf.io/preprints/psyarxiv/spu79_v2</a></li>
 
-    <li>Đurić, M., Righetti, F., Zoppolat, G., Solleiro Saura, C., &amp; <span class="pub-me">Schneider, I. K.</span> (2025). Loves me, loves me not: Perceived romantic partner's ambivalence is associated with lower personal and relationship well-being. <em>Emotion</em>, <a href="https://doi.org/10.1037/emo0001493" target="_blank">https://doi.org/10.1037/emo0001493</a></li>
+    <li>ÄuriÄ, M., Righetti, F., Zoppolat, G., Solleiro Saura, C., &amp; <span class="pub-me">Schneider, I. K.</span> (2025). Loves me, loves me not: Perceived romantic partner's ambivalence is associated with lower personal and relationship well-being. <em>Emotion</em>, <a href="https://doi.org/10.1037/emo0001493" target="_blank">https://doi.org/10.1037/emo0001493</a></li>
 
-    <li>Hohnsbehn, J., Pauels, E., &amp; <span class="pub-me">Schneider, I. K.</span> (2024). Open for business: How leader ambivalence facilitates upward follower communications via perceptions of increased cognitive flexibility and responsiveness. <em>Current Psychology</em>, 43, 37026–37043, <a href="https://doi.org/10.1007/s12144-024-07127-6" target="_blank">https://doi.org/10.1007/s12144-024-07127-6</a></li>
+    <li>Hohnsbehn, J., Pauels, E., &amp; <span class="pub-me">Schneider, I. K.</span> (2024). Open for business: How leader ambivalence facilitates upward follower communications via perceptions of increased cognitive flexibility and responsiveness. <em>Current Psychology</em>, 43, 37026â37043, <a href="https://doi.org/10.1007/s12144-024-07127-6" target="_blank">https://doi.org/10.1007/s12144-024-07127-6</a></li>
 
-    <li>Đurić, M., Righetti, F., Zoppolat, G., Lohmer, C., &amp; <span class="pub-me">Schneider, I. K.</span> (2024). Mixed signals: Romantic jealousy and ambivalence in relationships. <em>Emotion</em>, 24, 4.</li>
+    <li>ÄuriÄ, M., Righetti, F., Zoppolat, G., Lohmer, C., &amp; <span class="pub-me">Schneider, I. K.</span> (2024). Mixed signals: Romantic jealousy and ambivalence in relationships. <em>Emotion</em>, 25(4), 853–868.</li>
 
-    <li>Righetti, F., Duric, M., &amp; <span class="pub-me">Schneider, I.K.</span> (2024) Beyond good or bad: The four evaluative quadrants of relationships. <em>Personality and Social Psychology Review</em>, <a href="https://doi.org/10.1177/10888683241302" target="_blank">https://doi.org/10.1177/10888683241302</a></li>
+    <li>Righetti, F., Duric, M., &amp; <span class="pub-me">Schneider, I.K.</span> (2024) Beyond good or bad: The four evaluative quadrants of relationships. <em>Personality and Social Psychology Review</em>, <a href="https://doi.org/10.1177/10888683241302247" target="_blank">https://doi.org/10.1177/10888683241302247</a></li>
 
     <li>Gillebaart, M., &amp; <span class="pub-me">Schneider, I. K.</span> (2024). Effortless self-control. <em>Current Opinion in Psychology</em>, 101860, <a href="https://www.sciencedirect.com/science/article/pii/S2352250X24000733" target="_blank">https://doi.org/10.1016/j.copsyc.2024.101860</a></li>
 
-    <li>Becker, D., Bijleveld, E., Braem, S., Fröber, K., Götz, F. J., Kleiman, T., Körner, A., Pfister, R., Reiter, A. M. F., Saunders, B., <span class="pub-me">Schneider, I. K.</span>, Soutschelu, A., van Steenbergen, H., &amp; Dignath, D. (2024). An integrative framework of conflict and control. <em>Trends in Cognitive Sciences</em>, 28(8), 757–768, <a href="https://doi.org/10.1016/j.tics.2024.07.002" target="_blank">https://doi.org/10.1016/j.tics.2024.07.002</a></li>
+    <li>Becker, D., Bijleveld, E., Braem, S., FrÃ¶ber, K., GÃ¶tz, F. J., Kleiman, T., KÃ¶rner, A., Pfister, R., Reiter, A. M. F., Saunders, B., <span class="pub-me">Schneider, I. K.</span>, Soutschelu, A., van Steenbergen, H., &amp; Dignath, D. (2024). An integrative framework of conflict and control. <em>Trends in Cognitive Sciences</em>, 28(8), 757â768, <a href="https://doi.org/10.1016/j.tics.2024.07.002" target="_blank">https://doi.org/10.1016/j.tics.2024.07.002</a></li>
 
     <li>Anvari, F., Bachmann J., Sanchez-Burks J., &amp; <span class="pub-me">Schneider, I.K.</span> (2023). Is 'neutral' really neutral? Mid-point ratings in the affective norms english words (ANEW) may mask ambivalence. <em>Collabra: Psychology</em> 9, no. 1: 82204. <a href="https://doi.org/10.1525/collabra.82204" target="_blank">https://doi.org/10.1525/collabra.82204</a> (open access)</li>
 
@@ -206,7 +223,7 @@
 
     <li>Gordon, T., <span class="pub-me">Schneider, I.K.</span>, Shavi, S., &amp; Bereby-Meyer, Y. (2020). Leaving with something: When do people experience an equity-efficiency conflict? <em>Journal of Behavioral Decision Making</em>, 34 (2).</li>
 
-    <li>Righetti, F., <span class="pub-me">Schneider, I.K.</span>, Ferrier, D., Spiridonova, T., Xiang, R., &amp; Impett, E.A. (2020). The Bittersweet Taste of Sacrifice: Consequences for Ambivalence and Mixed Reactions, 149(10), 1950–1968. <em>Journal of Experimental Psychology: General</em>.</li>
+    <li>Righetti, F., <span class="pub-me">Schneider, I.K.</span>, Ferrier, D., Spiridonova, T., Xiang, R., &amp; Impett, E.A. (2020). The Bittersweet Taste of Sacrifice: Consequences for Ambivalence and Mixed Reactions, 149(10), 1950â1968. <em>Journal of Experimental Psychology: General</em>.</li>
 
     <li><span class="pub-me">Schneider, I.K.</span>, Stapels, J., Koole, S.L. &amp; Schwarz, N. (2020). Too close to call: Spatial distance between options influences choice difficulty. <em>Journal of Experimental Social Psychology</em>, 87.</li>
 
@@ -235,11 +252,11 @@
 
     <li>Pauer, S., Rutjens, B. T., Brick, C., Lob, A. B., Buttlar, B., Noordewier, M. K., <span class="pub-me">Schneider, I.K.</span>, &amp; van Harreveld, F. (2024). Is the Effect of Trust on Risk Perceptions a Matter of Knowledge, Control, and Time? An Extension and Direct-Replication Attempt of Siegrist and Cvetkovich  (2000). <em>Social Psychological and Personality Science</em>.</li>
 
-    <li>Anvari, F., Arslan, R.C., Efendić, E., Elson, E., &amp; <span class="pub-me">Schneider, I.K.</span> (2024). No Initial Elevation on Personality Self-Reports in an Online Convenience Sample. <em>Collabra: Psychology</em> 16 January 2024; 10 (1): 117096.</li>
+    <li>Anvari, F., Arslan, R.C., EfendiÄ, E., Elson, E., &amp; <span class="pub-me">Schneider, I.K.</span> (2024). No Initial Elevation on Personality Self-Reports in an Online Convenience Sample. <em>Collabra: Psychology</em> 16 January 2024; 10 (1): 117096.</li>
 
-    <li>Pauels, E., <span class="pub-me">Schneider, I. K.</span>, &amp; Schwarz, N. (2023). Close to the same: Similarity influences remembered distance between stimuli. <em>Psychonomic Bulletin and Review</em>, 30, 1814–1828. <a href="https://doi.org/10.3758/s13423-023-02267-5" target="_blank">https://doi.org/10.3758/s13423-023-02267-5</a></li>
+    <li>Pauels, E., <span class="pub-me">Schneider, I. K.</span>, &amp; Schwarz, N. (2023). Close to the same: Similarity influences remembered distance between stimuli. <em>Psychonomic Bulletin and Review</em>, 30, 1814â1828. <a href="https://doi.org/10.3758/s13423-023-02267-5" target="_blank">https://doi.org/10.3758/s13423-023-02267-5</a></li>
 
-    <li>Anvari, F., Efendić, E., Olsen, J., Arslan, R. C., Elson, M., &amp; <span class="pub-me">Schneider, I. K.</span> (2023). Bias in self-reports: An initial elevation phenomenon. <em>Social Psychological and Personality Science</em>, 14(6), 727-737.</li>
+    <li>Anvari, F., EfendiÄ, E., Olsen, J., Arslan, R. C., Elson, M., &amp; <span class="pub-me">Schneider, I. K.</span> (2023). Bias in self-reports: An initial elevation phenomenon. <em>Social Psychological and Personality Science</em>, 14(6), 727-737.</li>
 
     <li>Anvari, F., Rensing, N. Z., Kalokerinos, E. K., Lucas, R. E., &amp; <span class="pub-me">Schneider, I. K.</span> (2023). Assessing validity and bias of within-person variability in affect and personality. <em>Personality and Social Psychology Bulletin</em>.</li>
 
@@ -247,7 +264,7 @@
 
     <li><span class="pub-me">Schneider, I.K.</span> &amp; Mattes, A.M. (2021). The Effect of Spatial Distance between Objects on Categorization Level. <em>Psychonomic Bulletin and Review</em>.</li>
 
-    <li>Toribio-Flórez, D., van Harreveld, F., &amp; <span class="pub-me">Schneider, I.K.</span> (2020). Ambivalence and Interpersonal liking: The expression of ambivalence as social validation of attitudinal conflict. <em>Frontiers in Psychology</em>.</li>
+    <li>Toribio-FlÃ³rez, D., van Harreveld, F., &amp; <span class="pub-me">Schneider, I.K.</span> (2020). Ambivalence and Interpersonal liking: The expression of ambivalence as social validation of attitudinal conflict. <em>Frontiers in Psychology</em>.</li>
 
     <li>Leung, A.K.Y., Liou, S., Miron-Spektor, E., Koh, B., Chan, D, Eisenberg, R., &amp; <span class="pub-me">Schneider, I.K.</span> (2018). Middle ground approach to paradox: Within- and between-culture examination of the creative benefits of paradoxical frames. <em>Journal of Personality and Social Psychology: Personality Processes and Individual Differences</em>, 114, 443-464.</li>
 
@@ -263,7 +280,7 @@
 
     <li>Stins J., <span class="pub-me">Schneider I.K.</span>, Koole S.L., &amp; Beek P.J. (2015). The Influence of Mental Imagery on Postural Sway: Differential Effects of Type of Body Movement and Person Perspective. <em>Advances in Cognitive Psychology</em>, 11, 77-83.</li>
 
-    <li>Topolinski S., Zürn M., &amp; <span class="pub-me">Schneider I.K.</span> (2015). What's In and What's Out in Branding? A Novel Articulation Effect for Brand Names. <em>Frontiers in Psychology</em>. 6, 585.</li>
+    <li>Topolinski S., ZÃ¼rn M., &amp; <span class="pub-me">Schneider I.K.</span> (2015). What's In and What's Out in Branding? A Novel Articulation Effect for Brand Names. <em>Frontiers in Psychology</em>. 6, 585.</li>
 
     <li><span class="pub-me">Schneider, I.K.</span>, Parzuchowski, M., Wojciszke, B., Schwarz, N., &amp; Koole, S.L. (2015). Weighty data: importance information influences estimated weight of digital information storage devices. <em>Frontiers in Psychology</em>, (5), 1536.</li>
 
@@ -273,7 +290,7 @@
 
     <li>Lakens, D., <span class="pub-me">Schneider, I.K.</span>, Jostmann, N.B., &amp; Schubert, T.W. (2011). Telling things apart: The distance between response keys influences categorization times. <em>Psychological Science</em>, 22, 887-890.</li>
 
-    <li><span class="pub-me">Schneider, I.K.</span>, Konijn, E.A., Righetti, F. &amp; Rusbult, C.E. (2011). A healthy dose of trust: The relationship between trust and health. <em>Personal Relationships</em>, 78, 668⃓676.</li>
+    <li><span class="pub-me">Schneider, I.K.</span>, Konijn, E.A., Righetti, F. &amp; Rusbult, C.E. (2011). A healthy dose of trust: The relationship between trust and health. <em>Personal Relationships</em>, 78, 668â676.</li>
   </ul>
 </div>
 
