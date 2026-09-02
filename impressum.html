@@ -7,23 +7,116 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Raleway', Helvetica, Arial, sans-serif; background-color: #fdf8f7; color: #3a3a3a; font-size: 16px; line-height: 1.7; }
-    nav { position: sticky; top: 0; z-index: 100; background: #fff; border-bottom: 1px solid #e8e2e0; display: flex; justify-content: center; align-items: center; gap: 40px; padding: 14px 40px; }
-    nav a { text-decoration: none; color: #3a3a3a; font-size: 15px; font-weight: 500; letter-spacing: 0.02em; transition: color 0.2s; }
+
+    body {
+      font-family: 'Raleway', Helvetica, Arial, sans-serif;
+      background-color: #fdf8f7;
+      color: #3a3a3a;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid #e8e2e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding: 14px 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #3a3a3a;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: color 0.2s;
+    }
+
     nav a:hover { color: #E8B84B; }
-    .nav-email-btn { background: #E8B84B; color: #fff !important; border-radius: 50px; padding: 8px 18px; display: flex; align-items: center; gap: 7px; font-weight: 600; font-size: 14px; }
+
+    .nav-email-btn {
+      background: #E8B84B;
+      color: #fff !important;
+      border-radius: 50px;
+      padding: 8px 18px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
     .nav-email-btn:hover { background: #d4a33a; }
     .nav-email-btn svg { width: 16px; height: 16px; fill: #fff; }
-    .content-wrap { max-width: 800px; margin: 0 auto; padding: 60px 30px 80px; }
-    .page-heading { font-size: 36px; font-weight: 700; color: #2a2a2a; margin-bottom: 8px; line-height: 1.2; }
-    .page-subheading { font-size: 14px; color: #888; margin-bottom: 40px; letter-spacing: 0.02em; }
-    .impressum-section { margin-bottom: 36px; }
-    .impressum-section h2 { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #E8B84B; margin-bottom: 10px; }
-    .impressum-section p, .impressum-section address { font-size: 15px; color: #3d3d3d; line-height: 1.8; font-style: normal; }
-    .impressum-section a { color: #3a3a3a; text-decoration: underline; }
+
+    .content-wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 30px 80px;
+    }
+
+    .page-heading {
+      font-size: 36px;
+      font-weight: 700;
+      color: #2a2a2a;
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+
+    .page-subheading {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 40px;
+      letter-spacing: 0.02em;
+    }
+
+    .impressum-section {
+      margin-bottom: 36px;
+    }
+
+    .impressum-section h2 {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #E8B84B;
+      margin-bottom: 10px;
+    }
+
+    .impressum-section p, .impressum-section address {
+      font-size: 15px;
+      color: #3d3d3d;
+      line-height: 1.8;
+      font-style: normal;
+    }
+
+    .impressum-section a {
+      color: #3a3a3a;
+      text-decoration: underline;
+    }
+
     .impressum-section a:hover { color: #E8B84B; }
-    .divider { border: none; border-top: 1px solid #e8e0d8; margin: 36px 0; }
-    footer { text-align: center; padding: 30px; font-size: 13px; color: #aaa; border-top: 1px solid #ede8e6; }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #e8e0d8;
+      margin: 36px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 13px;
+      color: #aaa;
+      border-top: 1px solid #ede8e6;
+    }
+
     footer a { color: #aaa; text-decoration: underline; }
     footer a:hover { color: #E8B84B; }
   </style>
@@ -45,14 +138,15 @@
 <div class="content-wrap">
 
   <h1 class="page-heading">Legal Notice</h1>
-  <p class="page-subheading">Impressum gem&auml;&szlig; &sect; 5 TMG</p>
+  <p class="page-subheading">Impressum gemäß § 5 TMG</p>
 
   <div class="impressum-section">
     <h2>Responsible Party</h2>
     <address>
       Dr. Iris K. Schneider<br />
+      Professor for Social and Organisational Psychology<br />
+      Faculty of Management, Economics, and Social Science<br />
       University of Cologne<br />
-      Wirtschafts- und Sozialwissenschaftliche Fakult&auml;t (WiSo)<br />
       Albertus-Magnus-Platz 1<br />
       50923 Cologne, Germany
     </address>
