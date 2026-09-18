@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Organisations – Dr. Iris K. Schneider</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Raleway', Helvetica, Arial, sans-serif;
+      background-color: #fdf8f7;
+      color: #3a3a3a;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid #e8e2e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding: 14px 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #3a3a3a;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: color 0.2s;
+    }
+
+    nav a:hover, nav a.active { color: #E8B84B; }
+
+    .nav-email-btn {
+      background: #E8B84B;
+      color: #fff !important;
+      border-radius: 50px;
+      padding: 8px 18px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .nav-email-btn:hover { background: #d4a33a; color: #fff !important; }
+    .nav-email-btn svg { width: 16px; height: 16px; fill: #fff; }
+
+    .content-wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 30px 80px;
+    }
+
+    .page-heading {
+      font-size: 44px;
+      font-weight: 700;
+      color: #2a2a2a;
+      margin-bottom: 10px;
+      line-height: 1.1;
+    }
+
+    .page-subhead {
+      font-size: 16px;
+      color: #888;
+      margin-bottom: 48px;
+      font-weight: 400;
+    }
+
+    .intro-block {
+      font-size: 16px;
+      line-height: 1.85;
+      color: #3d3d3d;
+      margin-bottom: 56px;
+    }
+
+    .intro-block p {
+      margin-bottom: 20px;
+    }
+
+    .intro-block strong {
+      font-weight: 600;
+      color: #2a2a2a;
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #E8B84B;
+      margin-bottom: 24px;
+    }
+
+    /* Topics */
+    .topics-section { margin-bottom: 56px; }
+
+    .topic-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .topic-list li {
+      padding: 18px 0 18px 24px;
+      border-bottom: 1px solid #f0ecea;
+      position: relative;
+      font-size: 15.5px;
+      line-height: 1.6;
+      color: #2a2a2a;
+      font-weight: 500;
+    }
+
+    .topic-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 26px;
+      width: 8px;
+      height: 8px;
+      background: #E8B84B;
+      border-radius: 50%;
+    }
+
+    .topic-desc {
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      color: #666;
+      margin-top: 4px;
+    }
+
+    /* Formats */
+    .formats-section { margin-bottom: 56px; }
+
+    .format-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .format-card {
+      background: #fff;
+      border: 1px solid #ede8e6;
+      border-radius: 6px;
+      padding: 20px 22px;
+    }
+
+    .format-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #2a2a2a;
+      margin-bottom: 6px;
+    }
+
+    .format-card p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* Commentary */
+    .commentary-section { margin-bottom: 56px; }
+
+    .commentary-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .commentary-list li {
+      padding: 16px 0;
+      border-bottom: 1px solid #f0ecea;
+      font-size: 14.5px;
+      color: #3d3d3d;
+      line-height: 1.6;
+    }
+
+    .commentary-list li:last-child { border-bottom: none; }
+
+    .commentary-meta {
+      font-size: 13px;
+      color: #999;
+      margin-top: 3px;
+    }
+
+    .commentary-empty {
+      font-size: 14px;
+      color: #aaa;
+      font-style: italic;
+      padding: 20px 0;
+    }
+
+    /* Contact */
+    .contact-section {
+      background: #fff;
+      border: 1px solid #ede8e6;
+      border-radius: 8px;
+      padding: 32px 36px;
+    }
+
+    .contact-section p {
+      font-size: 15.5px;
+      color: #3d3d3d;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #E8B84B;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      padding: 11px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    .contact-btn:hover { background: #d4a33a; }
+
+    .contact-btn svg { width: 16px; height: 16px; fill: #fff; }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 13px;
+      color: #aaa;
+      border-top: 1px solid #ede8e6;
+    }
+
+    footer a { color: #aaa; text-decoration: underline; }
+
+    @media (max-width: 720px) {
+      nav { gap: 20px; padding: 12px 20px; }
+      .page-heading { font-size: 32px; }
+      .format-grid { grid-template-columns: 1fr; }
+      .contact-section { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">About</a>
+  <a href="research.html">Research</a>
+  <a href="organisations.html" class="active">For Organisations</a>
+  <a href="blog.html">Blog</a>
+  <a href="mailto:iris.schneider@wiso.uni-koeln.de?subject=hello%20from%20website" class="nav-email-btn">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+    </svg>
+  </a>
+</nav>
+
+<div class="content-wrap">
+
+  <h1 class="page-heading">For Organisations</h1>
+  <p class="page-subhead">Executive programmes &middot; Workshops &middot; Advisory</p>
+
+  <div class="intro-block">
+    <p>Iris Schneider is <strong>W3 Professor of Social and Organizational Psychology</strong> at the University of Cologne. Before moving into academia, she worked for several years in industry in the Netherlands — in assessment and recruitment consulting, and in training and quality assurance at an internet provider. That background shapes how she works: her research addresses problems organisations actually face, and she translates findings into formats that practitioners can apply.</p>
+
+    <p>Her research asks what happens when people encounter conflicting evidence, mixed signals, or competing values — in individual decisions, in teams, and in how leaders are perceived and judged. She holds a Research Fellowship at the <strong>USC Mind and Society Center</strong>, leads the Ambivalence Research Collective (an international, interdisciplinary research network she founded), and serves as Speaker of a university profile area. Her work is supported by the Excellence Cluster ECONtribute and DFG funding. She teaches <strong>Global Leadership</strong> at Cologne and in <strong>CEMS</strong>, the international business school network.</p>
+  </div>
+
+  <!-- Topics -->
+  <div class="topics-section">
+    <div class="section-title">What she works on</div>
+    <ul class="topic-list">
+      <li>
+        Why decisions stall when the evidence points both ways
+        <span class="topic-desc">The psychology of ambivalence: what it is, why it paralyses, and what moves people through it.</span>
+      </li>
+      <li>
+        How visible uncertainty affects whether a leader is trusted
+        <span class="topic-desc">What happens to credibility when a leader publicly weighs both sides — and when that helps or hurts.</span>
+      </li>
+      <li>
+        Reading and managing ambivalence in teams
+        <span class="topic-desc">How to recognise mixed signals in a team, and how to work with them rather than around them.</span>
+      </li>
+      <li>
+        Why stated preferences do not predict behaviour
+        <span class="topic-desc">The gap between what people say they want and what they actually do — and what that means for surveys, strategy, and hiring.</span>
+      </li>
+      <li>
+        Self-leadership and growth through discomfort
+        <span class="topic-desc">Based on the Leading for Growth programme: how to use difficult emotions and conflict as a development resource rather than a problem to eliminate.</span>
+      </li>
+      <li>
+        German leadership in international context
+        <span class="topic-desc">How leadership styles shaped by the German system are read differently abroad, and how to close that gap.</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Formats -->
+  <div class="formats-section">
+    <div class="section-title">Formats</div>
+    <div class="format-grid">
+      <div class="format-card">
+        <h3>Keynote</h3>
+        <p>A 45–60 minute talk for conferences, company all-hands, or opening sessions. Content is tailored to the audience and occasion.</p>
+      </div>
+      <div class="format-card">
+        <h3>Half-day or full-day workshop</h3>
+        <p>Coaching-style, with exercises and group work rather than frontal teaching. Participants leave with tools they can use the following week.</p>
+      </div>
+      <div class="format-card">
+        <h3>Executive programme session</h3>
+        <p>A module within an existing programme — MBA, EMBA, leadership academy, or in-company track. Can be repeated across cohorts.</p>
+      </div>
+      <div class="format-card">
+        <h3>Company programme</h3>
+        <p>A multi-session engagement designed around a specific challenge: a restructuring, a leadership transition, a culture initiative.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Commentary -->
+  <div class="commentary-section">
+    <div class="section-title">Selected commentary</div>
+    <ul class="commentary-list">
+      <li>
+        Expert contribution on leadership in Germany
+        <div class="commentary-meta">Submitted September 2026 &mdash; publication pending</div>
+      </li>
+      <!-- Add further entries here as: <li>[Title or description] <div class="commentary-meta">[Outlet] &mdash; [Date]</div></li> -->
+    </ul>
+  </div>
+
+  <!-- Contact -->
+  <div class="contact-section">
+    <p>If you are putting together an executive programme, planning a company event, or looking for someone to work with a leadership team on any of the topics above, get in touch directly.</p>
+    <a href="mailto:iris.schneider@wiso.uni-koeln.de?subject=Enquiry%20from%20website" class="contact-btn">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+      </svg>
+      iris.schneider@wiso.uni-koeln.de
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  <p>&copy; Dr. Iris K. Schneider &mdash; <a href="mailto:iris.schneider@wiso.uni-koeln.de">iris.schneider@wiso.uni-koeln.de</a> &mdash; <a href="impressum.html">Legal Notice</a></p>
+</footer>
+
+</body>
+</html>
